@@ -1,0 +1,15 @@
+@URL=http://0.0.0.0:3001
+
+###
+GET {{URL}}/v1/docs/find?name=qqq
+
+###
+# autocannon http://0.0.0.0:3001/v1/docs/find?name=qqq
+
+###
+POST {{URL}}/v1/docs/create
+Content-Type: application/json
+
+{
+    "count":1e6
+}
